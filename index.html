@@ -34,6 +34,7 @@
         <div id="navLayer">
           <div id="navLogo">
             <img
+              id="companyLogo"
               src="./resources/assets/Layer_1logoMain.png"
               alt="Logo of car rental"
             />
@@ -59,6 +60,11 @@
                 </button>
               </li>
             </ul>
+            <div class="burger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="line"></div>
+            </div>
           </div>
         </div>
         <div id="navDropOff">
@@ -72,26 +78,338 @@
     </header>
 
     <main>
-        <section id="quickBook">
-            <div id="tabs">
-                <ul id="tabsList">
-                    <li class="tabsLi"><a href="#">Same as Pick-Up</a></li>
-                    <li class="tabsLi"><a href="#">Different Drop-Off</a></li>
-                    <li><select name="vehicle" id="vehicleSelect">
-                        <option value="default" selected disabled hidden>Select Vehicle Type</option>
-                        <option value="sedan">Sedan</option>
-                        <option value="hatchback">Hatchback</option>
-                        <option value="suv">SUV</option>
-                      </select></li>
-                </ul>
+      <section id="quickBook">
+        <div id="tabs">
+          <ul id="tabsList">
+            <li class="tabsLi"><a href="#">Same as Pick-Up</a></li>
+            <li class="tabsLi"><a href="#">Different Drop-Off</a></li>
+            <li>
+              <select name="vehicle" id="vehicleSelect">
+                <option value="default" selected disabled hidden>
+                  Select Vehicle Type
+                </option>
+                <option value="sedan">Sedan</option>
+                <option value="hatchback">Hatchback</option>
+                <option value="suv">SUV</option>
+              </select>
+            </li>
+          </ul>
+        </div>
+        <div id="bookInput"></div>
+        <div id="appStore">
+          <p id="downloadPara">
+            Download our App for easy accessibility anytime, anywhere!
+          </p>
+          <img
+            class="storeDownloadImage"
+            src="./resources/assets/Group 1261156297appStore.svg"
+            alt=""
+          />
+          <img
+            class="storeDownloadImage"
+            src="./resources/assets/Group 1261156298playstore.svg"
+            alt=""
+          />
+        </div>
+      </section>
+
+      <!-- Summer Promotion -->
+      <section id="summerPromotion">
+        <div id="summerPromotionDiv">
+          <div id="giftVoucher">
+            Recieve guarnteed
+            <button id="giftVoucherButton">Gift Voucher</button>
+          </div>
+          <div>on a monthly hire or lease</div>
+        </div>
+      </section>
+
+      <!-- POPULAR CARS -->
+      <section id="popularcars">
+        <h2 id="popularcarsH2">Most popular cars</h2>
+        <div id="popularCardRow">
+          <div class="popularCarCard">
+            <img src="./resources/assets/Mask groupmitsubhishi.svg" alt="" />
+            <div class="popularCarCardInfo">
+              <h3 class="popularCarCardInfoHeading">Mitsubhishi Eclipse</h3>
+              <p class="popularCarCardInfoPara">
+                Eclipse Cross is a fusion of sharp coupe looks and dynamic SUV
+                mobility with signature Mitsubishi styling, technology and
+                driving confidence.
+              </p>
+              <ul class="popularCarUl">
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Vector.svg" alt="" />
+                  <p>6 People</p>
+                </li>
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Vectorgear.svg" alt="" />
+                  <p>Automatic</p>
+                </li>
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Vectordoor.svg" alt="" />
+                  <p>5 Doors</p>
+                </li>
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Groupac.svg" alt="" />
+                  <p>AC</p>
+                </li>
+              </ul>
+              <div class="popularCarCardInfo2">
+                <p class="popularCardCost">AED 2700/ Monthly</p>
+                <button class="bookNowButton">Book Now</button>
+              </div>
             </div>
-            <div id="bookInput"></div>
-            <div id="appStore">
-                <p id="downloadPara">Download our App for easy accessibility anytime, anywhere!</p>
-                <img class="storeDownloadImage" src="./resources/assets/Group 1261156297appStore.svg" alt="">
-                <img class="storeDownloadImage" src="./resources/assets/Group 1261156298playstore.svg" alt="">
+          </div>
+
+          <div class="popularCarCard">
+            <img src="./resources/assets/Rectangle 23951jac.svg" alt="" />
+            <div class="popularCarCardInfo">
+              <h3 class="popularCarCardInfoHeading">Jac J7</h3>
+              <p class="popularCarCardInfoPara">
+                S3 Plus has been rated Five-Star in C-NCAP including front
+                impact, side impact, frontal side impact & Whipping test.
+              </p>
+              <ul class="popularCarUl">
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Vector.svg" alt="" />6 People
+                </li>
+                <li class="popularcarLi">
+                  <img
+                    src="./resources/assets/Vectorgear.svg"
+                    alt=""
+                  />Automatic
+                </li>
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Vectordoor.svg" alt="" />5 Doors
+                </li>
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Groupac.svg" alt="" />AC
+                </li>
+              </ul>
+              <div class="popularCarCardInfo2">
+                <p class="popularCardCost">AED 2700/ Monthly</p>
+                <button class="bookNowButton">Book Now</button>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUBSCRIBE SECTION -->
+      <section id="subscribe">
+        <!-- subscribe Div 1 -->
+        <div id="subscribeDiv1">
+          <h3 id="subscribeDiv1Heading">
+            Subscribe here for exclusive offers and updates!
+          </h3>
+          <div id="subscribeDiv1InputDiv">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+          </div>
+          <p id="subscribeDiv1Para">
+            Don't miss out! enter your email and your name, then hit subscribe
+            to unlock a world of special offers and details.
+          </p>
+          <button id="subscribeButton">Subscribe</button>
+        </div>
+
+        <!-- subscribe div2 -->
+        <div id="subscribeDiv2">
+          <img
+            id="mobileAppImg"
+            src="./resources/assets/Rectangle.svg"
+            alt=""
+          />
+          <div id="DownloadLinkDiv">
+            <p id="downloadLinkPara">
+              Enter your number and receive <br />
+              a direct link to download the app
+            </p>
+            <input
+              id="subscribePhoneInput"
+              type="phone"
+              placeholder="Enter Phone Number"
+            />
+            <button id="getLinkButton">Get the link</button>
+            <p id="getItOnPara">Get it on</p>
+            <div id="StoreLinks">
+              <img src="./resources/assets/googlePlay.svg" alt="" />
+              <img src="./resources/assets/appleStore.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Div2 Mobile View -->
+        <div id="subscribeDiv2Mobile">
+          <div id="subscribeDiv2Main">
+            <img
+              id="mobileAppImgMV"
+              src="./resources/assets/Rectangle.svg"
+              alt=""
+            />
+            <div id="DownloadLinkDiv">
+              <p id="getItOnParaMV">Get it on</p>
+              <div id="StoreLinksMV">
+                <img src="./resources/assets/googlePlay.svg" alt="" />
+                <br />
+                <img src="./resources/assets/appleStore.svg" alt="" />
+              </div>
+              <p id="downloadLinkParaMV">
+                Enter your number and receive a direct link <br />to download
+                the app
+              </p>
+            </div>
+          </div>
+          <div id="downloadInputDiv">
+            <input
+              id="subscribePhoneInputMV"
+              type="phone"
+              placeholder="Enter Phone Number"
+            />
+            <button id="getLinkButton">Get the link</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Steps -->
+      <section id="rentSteps">
+        <h2 id="rentStepsHeading">Rent/Lease In three easy steps</h2>
+        <div id="rentStepsRow">
+          <div class="rentStepCols">
+            <h3 class="rentSteph3">01</h3>
+            <div class="rentStepSubdiv">
+              <img
+                src="./resources/assets/Frame 1171274971locationPin.svg"
+                alt=""
+              />
+              <p class="rentDivPara">
+                Select the location. Browse through our available options and
+                find the perfect car to suit your needs
+              </p>
+            </div>
+          </div>
+
+          <div class="rentStepCols">
+            <h3 class="rentSteph3">02</h3>
+            <div class="rentStepSubdiv">
+              <img
+                src="./resources/assets/Frame 1171274970calender.svg"
+                alt=""
+              />
+              <p class="rentDivPara">
+                Choose your desired Pick-Up date and time.
+              </p>
+            </div>
+          </div>
+
+          <div class="rentStepCols">
+            <h3 class="rentSteph3">03</h3>
+            <div class="rentStepSubdiv">
+              <img src="./resources/assets/Frame 1171274969car.svg" alt="" />
+              <p class="rentDivPara">
+                Make payment and book the car. Select an option to either have
+                the car delivered to your location or pick it up directly from
+                us.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Locations -->
+      <section id="location">
+        <h2 id="locationHeadings">Locations</h2>
+        <ul id="locationUl">
+          <li class="locationLi">
+            <img src="./resources/assets/Layer_1locationPin2.svg" alt="" /><span
+              >Dubai</span
+            >
+          </li>
+          <li class="locationLi">
+            <img src="./resources/assets/Layer_1locationPin2.svg" alt="" /><span
+              >Abu Dhabi</span
+            >
+          </li>
+          <li class="locationLi">
+            <img src="./resources/assets/Layer_1locationPin2.svg" alt="" /><span
+              >Sharja</span
+            >
+          </li>
+          <li class="locationLi">
+            <img src="./resources/assets/Layer_1locationPin2.svg" alt="" />
+            <span>Fujairah</span>
+          </li>
+          <li class="locationLi" id="locationLiEnd">
+            <img src="./resources/assets/Layer_1locationPin2.svg" alt="" /><span
+              >Ras Al Khaimah</span
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- Faqs -->
+      <section id="faq">
+        <h2 id="faqHeading">Frequently asked questions</h2>
+        <div class="accordionBox">
+          <button class="accordion">
+            What is my eligibility to book a car?
+          </button>
+          <div class="panel">
+            <p id="panelPara">
+              You should be of 18 years old above and you must possess a valid
+              driving license
+            </p>
+          </div>
+        </div>
+
+        <div class="accordionBox">
+          <button class="accordion">Can i book for any period of time?</button>
+          <div class="panel">
+            <p id="panelPara">Lorem ipsum...</p>
+          </div>
+        </div>
+
+        <div class="accordionBox">
+          <button class="accordion">Can i opt car for a longer period?</button>
+          <div class="panel">
+            <p id="panelPara">Lorem ipsum...</p>
+          </div>
+        </div>
+
+        <div class="accordionBox">
+          <button class="accordion">Can i book one-way trip?</button>
+          <div class="panel">
+            <p id="panelPara">Lorem ipsum...</p>
+          </div>
+        </div>
+
+        <div class="accordionBox">
+          <button class="accordion">
+            Is there home delivery option available?
+          </button>
+          <div class="panel">
+            <p id="panelPara">Lorem ipsum...</p>
+          </div>
+        </div>
+
+        <div class="accordionBox">
+          <button class="accordion">How can i make the payment?</button>
+          <div class="panel">
+            <p id="panelPara">Lorem ipsum...</p>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer>
+      <div id="footerDiv1">
+        <img src="./resources/assets/Group 1261156477alhabtoor.svg" alt="" />
+      </div>
+      <hr />
+      <p id="copyright">© 2018 Car rental LLC - All Rights Reserved.</p>
+    </footer>
+
+    <script src="./resources/script.js"></script>
   </body>
 </html>
