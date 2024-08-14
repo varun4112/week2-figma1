@@ -55,7 +55,6 @@ nav {
 
 .navLinkLi {
     margin-left: 32px;
-
 }
 
 .navLinkLi a {
@@ -128,6 +127,59 @@ nav {
     margin: 5px;
 }
 
+.side-bar {
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    height: 543px;
+    padding: 56px 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#closeButtonIcon {
+    float: right;
+}
+
+.drop-navMenu {
+    display: flex;
+    flex-direction: column;
+}
+
+.drop-navMenu a {
+    text-decoration: none;
+    color: black;
+    margin: 20px 0px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+
+}
+
+.loginSignUpButton {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 16px;
+    padding: 4px 20px;
+}
+
+.loginSignUpButton:hover {
+    background-color: rgb(70, 70, 70);
+}
+
+.side-bar.active {
+    display: flex;
+}
+
+.side-bar.inactive {
+    display: none;
+}
+
 
 /* MAIN STYLING */
 /* QUICK BOOK STYLING */
@@ -167,6 +219,51 @@ nav {
     color: white;
 }
 
+#bookInput {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+#locationSelect,
+#startTime,
+#endTime {
+    padding: 8px 20px;
+    border-radius: 16px;
+    border: none;
+    margin-right: 16px;
+    margin-bottom: 4px;
+    flex: 1;
+}
+
+#searchButton {
+    border-radius: 24px;
+    padding: 2px 16px;
+    border: none;
+    margin-right: 16px;
+    margin-bottom: 4px;
+
+
+}
+
+#vDivider {
+    border-right: 1px solid #FFFFFF;
+    width: 1px;
+    height: 32px;
+    margin-right: 16px;
+}
+
+#quickBookButton {
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: white;
+    padding: 10px 77px;
+    border-radius: 16px;
+}
+
+
+
 #appStore {
     display: flex;
     align-items: center;
@@ -196,6 +293,10 @@ nav {
 #vehicleSelect option {
     background-color: #ac171d;
     color: white;
+}
+
+#quickBookMobile {
+    display: none;
 }
 
 #summerPromotion {
@@ -998,8 +1099,180 @@ footer {
 
     .burger {
         display: block;
+    }
 
+    #quickBookMobile {
+        display: block;
+    }
+
+    #bookInput {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-bottom: 4px;
+    }
+
+    #tabs,
+    #bookInput {
+        display: none;
+    }
+
+    #quickBook {
+        height: 120px;
+        padding: 16px 40px;
+    }
+
+    #appStore {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #downloadPara {
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+
+    #quickBookMobile {
+        text-align: center;
+    }
+
+    #bookDropdownMenu {
+        display: flex;
+        text-align: center;
+        margin: 16px 16px;
+        justify-content: center;
 
     }
 
+    #BookACar {
+        background-color: #E21E26;
+        border: none;
+        color: white;
+        border-radius: 8px;
+        width: 160px;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 19.5px;
+        text-align: center;
+        height: 38px;
+        margin-right: 8px;
+    }
+
+    #BookACar:hover {
+        background-color: #b6171c;
+    }
+
+    #bookQuick {
+        background-color: transparent;
+        border: 2px solid #E21E26;
+        color: #E21E26;
+        border-radius: 8px;
+        background-color: white;
+        width: 160px;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 19.5px;
+        text-align: center;
+        height: 38px;
+    }
+
+    #bookQuick:hover{
+        background-color: rgb(219, 219, 219);
+    }
+
+    #bookTabs{
+        display: none;
+    }
+
+    #bookTabs.active{
+        display: block;
+    }
+
+    #tabsListMv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .tabsLiMv a {
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 56.74px;
+        letter-spacing: -0.035em;
+        text-align: left;
+        padding: 4px;
+
+    }
+
+    .tabsLiMv a:hover {
+        margin-right: 10px;
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 56.74px;
+        letter-spacing: -0.035em;
+        text-align: left;
+        border-bottom: 1px solid black;
+
+    }
+
+    #vehicleSelectmv {
+        border: 0;
+    }
+
+    #quickBookLi {
+        list-style: none;
+    }
+
+    #pickupSelectmv,
+    #dropOffLocation,
+    #pickupDate,
+    #dropOffDate {
+        padding: 16px;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: #F6F7F9;
+        border: none;
+        border-radius: 8px;
+    }
+
+    #quickbookSearch {
+        background-color: #E21E26;
+        border: none;
+        color: white;
+        border-radius: 4px;
+        width: 160px;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 19.5px;
+        text-align: center;
+        height: 38px;
+        margin: 16px 64px;
+    }
+
 }
+
+@media only screen and (max-width: 1280px) {
+    #name {
+        display: none;
+    }
+
+    #avatar {
+        margin: 0px;
+    }
+
+    .navLinkLi {
+        margin-left: 8px;
+    }
+
+    #bookInput {
+        margin-bottom: 4px;
+    }
+}
+

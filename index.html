@@ -75,6 +75,30 @@
           </p>
         </div>
       </nav>
+
+      <div class="side-bar">
+        <img
+          src="./resources/assets/Group 1261156498chlose.svg"
+          alt="Close Icon For Side Bar"
+          id="closeButtonIcon"
+          width="24"
+          height="24"
+        />
+        <div class="drop-navMenu">
+          <a href="">About</a>
+          <hr />
+          <a href="">Offers</a>
+          <hr />
+          <a href="">Coporate</a>
+          <hr />
+          <a href="">Personal</a>
+          <hr />
+          <a href="">Locations</a>
+          <hr />
+          <a href="">Contact Us</a>
+          <button class="loginSignUpButton">Login/Sign Up</button>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -95,21 +119,101 @@
             </li>
           </ul>
         </div>
-        <div id="bookInput"></div>
+        <div id="bookInput">
+          <select name="location" id="locationSelect">
+            <option value="default" selected disabled hidden>Al Quaz</option>
+            <option value="sedan">Fujairah</option>
+          </select>
+
+          <input
+            id="startTime"
+            type="datetime-local"
+            value="2023-10-30T09:00"
+          />
+          <input id="endTime" type="datetime-local" value="2023-10-30T09:00" />
+          <button id="searchButton">
+            <img
+              src="./resources/assets/clarity_search-linesearch.svg"
+              alt=""
+            />
+          </button>
+          <div id="vDivider"></div>
+          <button id="quickBookButton">Quick Book</button>
+        </div>
+
         <div id="appStore">
           <p id="downloadPara">
             Download our App for easy accessibility anytime, anywhere!
           </p>
-          <img
-            class="storeDownloadImage"
-            src="./resources/assets/Group 1261156297appStore.svg"
-            alt=""
-          />
-          <img
-            class="storeDownloadImage"
-            src="./resources/assets/Group 1261156298playstore.svg"
-            alt=""
-          />
+          <div id="appImages">
+            <img
+              class="storeDownloadImage"
+              src="./resources/assets/Group 1261156297appStore.svg"
+              alt=""
+            />
+            <img
+              class="storeDownloadImage"
+              src="./resources/assets/Group 1261156298playstore.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="quickBookMobile">
+        <div id="bookDropdownMenu">
+          <button id="BookACar">Book a car</button>
+          <button id="bookQuick">Quick book</button>
+        </div>
+
+        <div id="bookTabs">
+          <ul id="tabsListMv">
+            <li class="tabsLiMv"><a href="#">Same as Pick-Up</a></li>
+            <li class="tabsLiMv"><a href="#">Different Drop-Off</a></li>
+            <li>
+              <select name="vehicle" id="vehicleSelectmv">
+                <option value="default" selected disabled hidden>
+                  Vehicle Type
+                </option>
+                <option value="sedan">Sedan</option>
+                <option value="hatchback">Hatchback</option>
+                <option value="suv">SUV</option>
+              </select>
+            </li>
+          </ul>
+          <ul id="quickBookmobileInput">
+            <li id="quickBookLi">
+              <select name="pickup" id="pickupSelectmv">
+                <option value="default" selected disabled hidden>
+                  Pick up location
+                </option>
+                <option value="sedan">Sedan</option>
+                <option value="hatchback">Hatchback</option>
+                <option value="suv">SUV</option>
+              </select>
+            </li>
+            <li id="quickBookLi">
+              <select name="vehicle" id="dropOffLocation">
+                <option value="default" selected disabled hidden>
+                  Drop off location
+                </option>
+                <option value="sedan">Sedan</option>
+                <option value="hatchback">Hatchback</option>
+                <option value="suv">SUV</option>
+              </select>
+            </li>
+            <li id="quickBookLi">
+              <input id="pickupDate"
+                type=""
+                placeholder="Pick-Up Date and Time"
+              />
+            </li>
+            <li id="quickBookLi"><input id="dropOffDate"
+              type=""
+              placeholder="Drop off Date and Time"
+            />
+          </li><button id="quickbookSearch">Search</button></li>
+          </ul>
         </div>
       </section>
 
@@ -128,6 +232,71 @@
       <section id="popularcars">
         <h2 id="popularcarsH2">Most popular cars</h2>
         <div id="popularCardRow">
+          <div class="popularCarCard">
+            <img src="./resources/assets/Mask groupmitsubhishi.svg" alt="" />
+            <div class="popularCarCardInfo">
+              <h3 class="popularCarCardInfoHeading">Mitsubhishi Eclipse</h3>
+              <p class="popularCarCardInfoPara">
+                Eclipse Cross is a fusion of sharp coupe looks and dynamic SUV
+                mobility with signature Mitsubishi styling, technology and
+                driving confidence.
+              </p>
+              <ul class="popularCarUl">
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Vector.svg" alt="" />
+                  <p>6 People</p>
+                </li>
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Vectorgear.svg" alt="" />
+                  <p>Automatic</p>
+                </li>
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Vectordoor.svg" alt="" />
+                  <p>5 Doors</p>
+                </li>
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Groupac.svg" alt="" />
+                  <p>AC</p>
+                </li>
+              </ul>
+              <div class="popularCarCardInfo2">
+                <p class="popularCardCost">AED 2700/ Monthly</p>
+                <button class="bookNowButton">Book Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="popularCarCard">
+            <img src="./resources/assets/Rectangle 23951jac.svg" alt="" />
+            <div class="popularCarCardInfo">
+              <h3 class="popularCarCardInfoHeading">Jac J7</h3>
+              <p class="popularCarCardInfoPara">
+                S3 Plus has been rated Five-Star in C-NCAP including front
+                impact, side impact, frontal side impact & Whipping test.
+              </p>
+              <ul class="popularCarUl">
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Vector.svg" alt="" />6 People
+                </li>
+                <li class="popularcarLi">
+                  <img
+                    src="./resources/assets/Vectorgear.svg"
+                    alt=""
+                  />Automatic
+                </li>
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Vectordoor.svg" alt="" />5 Doors
+                </li>
+                <li class="popularcarLi">
+                  <img src="./resources/assets/Groupac.svg" alt="" />AC
+                </li>
+              </ul>
+              <div class="popularCarCardInfo2">
+                <p class="popularCardCost">AED 2700/ Monthly</p>
+                <button class="bookNowButton">Book Now</button>
+              </div>
+            </div>
+          </div>
           <div class="popularCarCard">
             <img src="./resources/assets/Mask groupmitsubhishi.svg" alt="" />
             <div class="popularCarCardInfo">
@@ -410,6 +579,34 @@
       <p id="copyright">© 2018 Car rental LLC - All Rights Reserved.</p>
     </footer>
 
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const burger = document.querySelector(".burger");
+        const sidebar = document.querySelector(".side-bar");
+        const close = document.getElementById("closeButtonIcon");
+        const BookACar = document.getElementById("BookACar");
+
+        const bookTabs =  document.getElementById("bookTabs");
+
+        burger.addEventListener("click", () => {
+          console.log("clicked");
+          sidebar.classList.add("active");
+        });
+
+        close.addEventListener("click", () => {
+          console.log("clicked");
+          sidebar.classList.remove("active");
+        });
+
+        BookACar.addEventListener("click", () => {
+          console.log("clicked");
+          bookTabs.classList.toggle("active");
+        });
+
+        
+
+      });
+    </script>
     <script src="./resources/script.js"></script>
   </body>
 </html>
