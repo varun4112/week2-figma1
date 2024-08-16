@@ -12,6 +12,9 @@ header {
     padding: 0px 64px;
 }
 
+
+/* NAVBAR STYLING  */
+
 nav {
     height: 121px;
     width: 100%;
@@ -137,10 +140,13 @@ nav {
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 10;
 }
 
 #closeButtonIcon {
-    float: right;
+    position: absolute;
+    top: 16px;
+    right: 16px;
 }
 
 .drop-navMenu {
@@ -160,12 +166,18 @@ nav {
 
 }
 
+#aboutATag {
+    margin-top: 0;
+}
+
 .loginSignUpButton {
     background-color: black;
     color: white;
     border: none;
     border-radius: 16px;
     padding: 4px 20px;
+    margin-top: 60px;
+    width: 143px;
 }
 
 .loginSignUpButton:hover {
@@ -180,9 +192,42 @@ nav {
     display: none;
 }
 
+.hDivider {
+    height: 0.5px;
+    background-color: #f2f2f2;
+}
+
 
 /* MAIN STYLING */
+
+#call {
+    position: absolute;
+    top: 151px;
+    right: 0;
+    background-color: white;
+    height: 45px;
+    width: 48px;
+    padding: 10px 10px;
+    border-radius: 50% 0 0 50%;
+    box-shadow: 5px 5px 8px #888888;
+}
+
+#twentyfour {
+    position: absolute;
+    top: 224px;
+    right: 0;
+    background-color: white;
+    height: 45px;
+    width: 48px;
+    padding: 4px;
+    border-radius: 50% 0 0 50%;
+    box-shadow: 5px 5px 8px #888888;
+}
+
+
+
 /* QUICK BOOK STYLING */
+
 
 #quickBook {
     background-image: url(../resources/assets/Maskgroup.svg);
@@ -243,8 +288,10 @@ nav {
     border: none;
     margin-right: 16px;
     margin-bottom: 4px;
+}
 
-
+#searchButton:hover {
+    background-color: #ffffff;
 }
 
 #vDivider {
@@ -262,7 +309,10 @@ nav {
     border-radius: 16px;
 }
 
-
+#quickBookButton:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
 
 #appStore {
     display: flex;
@@ -297,10 +347,10 @@ nav {
 
 #quickBookMobile {
     display: none;
+    background-color: white;
 }
 
 #summerPromotion {
-    background-image: url(./assets/2018-Mitsubishi-ASX-1920x966\ 1summer.svg);
     height: 405px;
     background-position: center;
     background-repeat: no-repeat;
@@ -309,17 +359,47 @@ nav {
     border-radius: 12px;
 }
 
+
 #summerPromotionDiv {
-    position: relative;
+    position: absolute;
     top: 60%;
-    left: 40%;
+    left: 50%;
+    transform: translateX(-50%);
     color: white;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
     font-size: 18.37px;
     font-weight: 400;
     line-height: 26.91px;
-    text-align: left;
 
 }
+
+
+#slide1,
+#slide3 {
+    background-image: url(./assets/2018-Mitsubishi-ASX-1920x966\ 1summer.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 405px;
+    border-radius: 16px;
+}
+
+
+
+#slide2,
+#slide4 {
+    background-image: url(./assets/blue-car-speed-motion-stretch-style.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 405px;
+    border-radius: 16px;
+}
+
+
 
 #giftVoucherButton {
     background-color: #009046;
@@ -330,11 +410,22 @@ nav {
     border: none;
 }
 
+
+#giftVoucherButton:hover {
+    background-color: #05af57;
+    cursor: pointer;
+}
+
 /* POPULAR CARS SECTION */
 
 #popularCardRow {
     display: flex;
-    overflow-x: hidden;
+    overflow-x: scroll;
+    scrollbar-width: 0px;
+}
+
+#popularCardRow::-webkit-scrollbar {
+    display: none;
 }
 
 #popularcarsH2 {
@@ -417,15 +508,18 @@ nav {
     height: 37px;
     border-radius: 4px;
     border: none;
-    opacity: 0px;
     font-size: 14px;
     font-weight: 600;
     line-height: 21px;
     letter-spacing: -0.02em;
     text-align: center;
     color: white;
-    /* margin-left: 64px; */
     background-color: #E21E26;
+}
+
+.bookNowButton:hover {
+    background-color: #bb181d;
+    cursor: pointer;
 }
 
 /* SUBSCRIBE SECTION */
@@ -433,12 +527,14 @@ nav {
 #subscribe {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 89px;
+
     margin-top: 40px;
 }
 
 #subscribeDiv1 {
-    width: 50%;
+    width: 685px;
+    margin-bottom: 40px;
+    padding-left: 64px;
 }
 
 #subscribeDiv1Heading {
@@ -481,14 +577,17 @@ nav {
     border-radius: 5px;
 }
 
+#subscribeButton:hover {
+    background-color: #b81a1f;
+}
+
 #subscribeDiv2 {
     background-color: #E21E26;
     display: flex;
     padding: 48px 72px;
-    width: 50%;
+    width: 685px;
+    margin-bottom: 40px;
 }
-
-#mobileAppImg {}
 
 #downloadLinkPara {
     font-size: 14px;
@@ -520,6 +619,10 @@ nav {
     color: white;
     padding: 16px 32px;
     border-radius: 8px;
+}
+
+#getLinkButton:hover {
+    background-color: rgb(58, 58, 58);
 }
 
 #getItOnPara {
@@ -677,7 +780,7 @@ nav {
 }
 
 .locationLi {
-    border-right: 2px solid #ffffff;
+    border-right: 2px solid #333333;
     display: flex;
     text-align: center;
     align-items: center;
@@ -690,6 +793,8 @@ nav {
 .locationLi span {
     margin-left: 16px;
     color: #FFFFFF;
+    font-family: "Open Sans", sans-serif;
+
 }
 
 #locationLiEnd {
@@ -727,11 +832,15 @@ nav {
     font-weight: 400;
     line-height: 19.2px;
     text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .active,
 .accordion:hover {
     background-color: white;
+
 }
 
 .panel {
@@ -754,8 +863,10 @@ nav {
     text-align: left;
 }
 
-footer {
-    background-color: black;
+.rotateImage {
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+
 }
 
 #copyright {
@@ -763,6 +874,202 @@ footer {
     text-align: center;
     padding-top: 24px;
     padding-bottom: 24px;
+}
+
+
+
+/* FOOTER STYLING */
+/* FOOTER MOBILE VIEW */
+
+#footerMobile {
+    display: none;
+}
+
+#MediaLinks {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 12px 16px;
+    background-color: #F6F7F9;
+
+}
+
+#MediaLinks ul {
+    display: flex;
+    list-style: none;
+}
+
+#MediaLinks ul li {
+    display: flex;
+    list-style: none;
+    margin-left: 14px;
+}
+
+#bottomNavigation {
+    background-color: #F6F7F9;
+}
+
+#navul li {
+    margin-right: 16px;
+}
+
+#end {
+    margin-right: 0;
+}
+
+#copyright {
+    background-color: black;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.5px;
+    text-align: left;
+    border-top: 0.5px solid #808080;
+}
+
+#copyright p {
+    text-align: center;
+}
+
+#groupNavigation {
+    background-color: black;
+    color: #ffffff;
+    justify-content: center;
+}
+
+#groupNavigation h3 {
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: center;
+    padding: 12px 0;
+}
+
+#companyUl1,
+#companyUl2,
+#navul {
+    display: flex;
+    list-style: none;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    letter-spacing: -0.035em;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+#secureDiv {
+    text-align: center;
+}
+
+#middle {
+    margin: 0px 32px;
+}
+
+#first {
+    margin-right: 28px;
+}
+
+#secureImg {
+    justify-content: space-around;
+}
+
+/* FOOTER DESKTOP */
+#row {
+    display: flex;
+}
+
+#col1,
+#col3 {
+    width: 25%;
+    background-color: black;
+    padding: 40px 80px;
+}
+
+#col2 {
+    background-color: black;
+    width: 50%;
+    padding-top: 40px;
+}
+
+#col3 p {
+    color: #ffffff;
+}
+
+#col3 ul {
+    display: flex;
+    list-style: none;
+    margin-top: 10px;
+}
+
+#col3 ul li {
+    margin-right: 14px;
+
+}
+
+#companylogoFooter {
+    height: 120px;
+}
+
+#bottomNavDesktop {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#bottomNavList {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    color: #ffffff;
+    list-style: none;
+}
+
+#bottomNavList li {
+    margin-bottom: 16px;
+}
+
+#groupNavigationDesktop {
+    background-color: black;
+    color: #ffffff;
+    padding: 16px;
+    padding-left: 80px;
+}
+
+#groupNavigationDesktop h3 {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 19.5px;
+    text-align: left;
+    margin-bottom: 16px;
+
+}
+
+#companyUl1Desk {
+    display: flex;
+    list-style: none;
+}
+
+#companyUl1Desk li {
+    margin-right: 21px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.035em;
+    text-align: left;
+
+}
+
+#siteSecurityImages {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#siteSecurityImages img {
+    margin-right: 21px;
 }
 
 
@@ -815,6 +1122,69 @@ footer {
         padding-right: 6px;
     }
 
+    /* Summer Promotion */
+
+    #summerPromotion {
+        height: 216px;
+    }
+
+    #summerPromotionDiv {
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: white;
+        font-size: 9.8px;
+        font-weight: 400;
+        line-height: 14.35px;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .slideshow-container {
+        height: 216px;
+    }
+
+    #slide1,
+    #slide3 {
+        background-image: url(./assets/2018-Mitsubishi-ASX-1920x966\ 1summer.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 216px;
+
+    }
+
+    #slide2,
+    #slide4 {
+        background-image: url(./assets/blue-car-speed-motion-stretch-style.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 216px;
+
+    }
+
+
+
+
+
+    #giftVoucherButton {
+        background-color: #009046;
+        color: white;
+        width: 81px;
+        height: 16px;
+        border-radius: 0px;
+        border: none;
+        font-size: 8.12px;
+        font-weight: 600;
+        line-height: 10.27px;
+        text-align: center;
+
+
+    }
 
     /* POPULAR CAR */
 
@@ -888,7 +1258,6 @@ footer {
         height: 17px;
         margin-right: 8px;
         width: 70px;
-
     }
 
     .popularcarLi img {
@@ -912,6 +1281,7 @@ footer {
     #subscribeDiv1 {
         width: 100%;
         margin-bottom: 16px;
+        padding-left: 0;
     }
 
     #subscribeDiv1Heading {
@@ -959,8 +1329,6 @@ footer {
         display: none;
     }
 
-
-
     #subscribeDiv2Mobile {
         display: block;
     }
@@ -974,20 +1342,10 @@ footer {
         text-align: left;
     }
 
-    /* #rentStepsRow {
-        display: block;
-    } */
-
-
     /* LOCATION */
 
     #location {
-        /* background-color: black; */
-        /* text-align: center; */
         padding: 16px;
-        /* color: white;
-        margin-top: 40px;
-        margin-bottom: 56px; */
     }
 
     #locationHeadings {
@@ -1018,7 +1376,6 @@ footer {
         padding-right: 0px;
         margin-bottom: 16px;
         margin-right: 16px;
-        font-family: 'open sans';
         font-size: 14px;
         font-weight: 600;
         line-height: 19.07px;
@@ -1029,6 +1386,8 @@ footer {
     .locationLi span {
         margin-left: 16px;
         color: #FFFFFF;
+        font-family: "Open Sans", sans-serif;
+
     }
 
     /* FAQ */
@@ -1177,15 +1536,15 @@ footer {
         height: 38px;
     }
 
-    #bookQuick:hover{
+    #bookQuick:hover {
         background-color: rgb(219, 219, 219);
     }
 
-    #bookTabs{
+    #bookTabs {
         display: none;
     }
 
-    #bookTabs.active{
+    #bookTabs.active {
         display: block;
     }
 
@@ -1230,16 +1589,25 @@ footer {
         list-style: none;
     }
 
+    #quickBookmobileInput {
+        background-color: white;
+    }
+
     #pickupSelectmv,
     #dropOffLocation,
     #pickupDate,
     #dropOffDate {
         padding: 16px;
+        padding-left: 32px;
         width: 100%;
         margin-bottom: 10px;
         background-color: #F6F7F9;
         border: none;
         border-radius: 8px;
+    }
+
+    #dropOffLocation.inactive {
+        display: none;
     }
 
     #quickbookSearch {
@@ -1254,6 +1622,14 @@ footer {
         text-align: center;
         height: 38px;
         margin: 16px 64px;
+    }
+
+    #footerMobile {
+        display: block;
+    }
+
+    #desktop {
+        display: none;
     }
 
 }
@@ -1276,3 +1652,61 @@ footer {
     }
 }
 
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+#dotContainer {
+    position: relative;
+    top: -50px;
+}
+
+.active {
+    /* background-color: #717171; */
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}

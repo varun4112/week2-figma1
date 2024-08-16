@@ -11,10 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    
   </head>
+
+
   <body>
+
+    <!-- NAVBAR -->
     <header>
       <nav>
+        <!-- navbar social media links -->
         <div id="navSocial">
           <ul id="navSocialList">
             <li class="navSocailLi">
@@ -39,7 +45,7 @@
               alt="Logo of car rental"
             />
           </div>
-
+          <!-- navbar navigation links -->
           <div id="navList">
             <ul id="navLinkList">
               <li class="navLinkLi"><a href="#">About</a></li>
@@ -55,6 +61,7 @@
                     alt="notification"
                   />
                 </button>
+                <!-- avtar -->
                 <button id="avatarButton">
                   <span id="avatar">J</span><span id="name">John Doe</span>
                 </button>
@@ -68,45 +75,53 @@
           </div>
         </div>
         <div id="navDropOff">
-          <p id="navPara">
-            Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand
-            Sales Counters | All Rates inclusive of VAT. T&C’s apply | Follow us
-            on Social Media for New Offers
-          </p>
+          <marquee>
+            <p id="navPara">
+              Sunday Pick Up/Drop-Off only at Dubai Silicon Oasis & Habtoor Grand
+              Sales Counters | All Rates inclusive of VAT. T&C’s apply | Follow us
+              on Social Media for New Offers
+            </p>
+       </marquee>
         </div>
       </nav>
 
+      <!-- sidebar in mobile view -->
       <div class="side-bar">
-        <img
+        <div><img
           src="./resources/assets/Group 1261156498chlose.svg"
           alt="Close Icon For Side Bar"
           id="closeButtonIcon"
           width="24"
           height="24"
-        />
+        /></div>
+        
         <div class="drop-navMenu">
-          <a href="">About</a>
-          <hr />
+          <a href="" id="aboutATag">About</a>
+          <div class="hDivider"></div>
           <a href="">Offers</a>
-          <hr />
+          <div class="hDivider"></div>
           <a href="">Coporate</a>
-          <hr />
+          <div class="hDivider"></div>
           <a href="">Personal</a>
-          <hr />
+          <div class="hDivider"></div>
           <a href="">Locations</a>
-          <hr />
+          <div class="hDivider"></div>
           <a href="">Contact Us</a>
           <button class="loginSignUpButton">Login/Sign Up</button>
         </div>
       </div>
     </header>
 
+    <!-- MAIN SECTION -->
     <main>
+      <div id="call"> <img src="./resources/assets/ic_round-phonetelephone.svg" alt=""></div>
+      <div id="twentyfour"><img src="./resources/assets/7.svg" alt=""></div>
+      <!-- QuickBook -->
       <section id="quickBook">
         <div id="tabs">
           <ul id="tabsList">
-            <li class="tabsLi"><a href="#">Same as Pick-Up</a></li>
-            <li class="tabsLi"><a href="#">Different Drop-Off</a></li>
+            <li class="tabsLi"><a href="">Same as Pick-Up</a></li>
+            <li class="tabsLi"><a href="">Different Drop-Off</a></li>
             <li>
               <select name="vehicle" id="vehicleSelect">
                 <option value="default" selected disabled hidden>
@@ -119,6 +134,7 @@
             </li>
           </ul>
         </div>
+
         <div id="bookInput">
           <select name="location" id="locationSelect">
             <option value="default" selected disabled hidden>Al Quaz</option>
@@ -160,6 +176,7 @@
         </div>
       </section>
 
+      <!-- Quick Book Mobile Menu -->
       <section id="quickBookMobile">
         <div id="bookDropdownMenu">
           <button id="BookACar">Book a car</button>
@@ -168,8 +185,8 @@
 
         <div id="bookTabs">
           <ul id="tabsListMv">
-            <li class="tabsLiMv"><a href="#">Same as Pick-Up</a></li>
-            <li class="tabsLiMv"><a href="#">Different Drop-Off</a></li>
+            <li class="tabsLiMv"><a href="#" id="sameAsPickUp">Same as Pick-Up</a></li>
+            <li class="tabsLiMv"><a href="#" id="differentPickup">Different Drop-Off</a></li>
             <li>
               <select name="vehicle" id="vehicleSelectmv">
                 <option value="default" selected disabled hidden>
@@ -187,9 +204,8 @@
                 <option value="default" selected disabled hidden>
                   Pick up location
                 </option>
-                <option value="sedan">Sedan</option>
-                <option value="hatchback">Hatchback</option>
-                <option value="suv">SUV</option>
+                <option value="sedan">Dubai</option>
+                
               </select>
             </li>
             <li id="quickBookLi">
@@ -197,9 +213,8 @@
                 <option value="default" selected disabled hidden>
                   Drop off location
                 </option>
-                <option value="sedan">Sedan</option>
-                <option value="hatchback">Hatchback</option>
-                <option value="suv">SUV</option>
+                <option value="sedan">Fujairah</option>
+                
               </select>
             </li>
             <li id="quickBookLi">
@@ -217,16 +232,41 @@
         </div>
       </section>
 
-      <!-- Summer Promotion -->
+      <!-- SUMMER PROMOTION -->
       <section id="summerPromotion">
-        <div id="summerPromotionDiv">
-          <div id="giftVoucher">
-            Recieve guarnteed
-            <button id="giftVoucherButton">Gift Voucher</button>
+        <div class="slideshow-container">
+
+          <div class="mySlides fade" id="slide1">
           </div>
-          <div>on a monthly hire or lease</div>
-        </div>
+          <div class="mySlides fade" id="slide2">
+          </div>  
+          <div class="mySlides fade" id="slide3">
+          </div>
+          <div class="mySlides fade" id="slide4">
+          </div>
+
+          
+          <div id="dotContainer" style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span>
+          </div>
+          <div id="summerPromotionDiv">
+            <div id="giftVoucher">
+              Recieve guarnteed
+              <button id="giftVoucherButton">Gift Voucher</button>
+            </div>
+            <div>on a monthly hire or lease</div>
+          </div>
+          
+          </div><br>
       </section>
+
+      <!-- slide show -->
+      
+
+        
 
       <!-- POPULAR CARS -->
       <section id="popularcars">
@@ -373,8 +413,10 @@
             Subscribe here for exclusive offers and updates!
           </h3>
           <div id="subscribeDiv1InputDiv">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
+            <input type="text" id="name" placeholder="Name" required onchange="validateName()" />
+            <small class="error" id="nameError"></small>
+            <input type="email" id="email" placeholder="Email"  required onchange="validateEmail()" />
+            <small class="error" id="emailError"></small>
           </div>
           <p id="subscribeDiv1Para">
             Don't miss out! enter your email and your name, then hit subscribe
@@ -398,7 +440,7 @@
             <input
               id="subscribePhoneInput"
               type="phone"
-              placeholder="Enter Phone Number"
+              placeholder="Enter Phone Number" required
             />
             <button id="getLinkButton">Get the link</button>
             <p id="getItOnPara">Get it on</p>
@@ -502,7 +544,7 @@
           </li>
           <li class="locationLi">
             <img src="./resources/assets/Layer_1locationPin2.svg" alt="" /><span
-              >Sharja</span
+              >Sharjah</span
             >
           </li>
           <li class="locationLi">
@@ -522,7 +564,7 @@
         <h2 id="faqHeading">Frequently asked questions</h2>
         <div class="accordionBox">
           <button class="accordion">
-            What is my eligibility to book a car?
+            What is my eligibility to book a car?<img id="x1" class="rotateImage" src="./resources/assets/xmarkxmark.svg" alt="">
           </button>
           <div class="panel">
             <p id="panelPara">
@@ -533,80 +575,165 @@
         </div>
 
         <div class="accordionBox">
-          <button class="accordion">Can i book for any period of time?</button>
+          <button class="accordion">Can i book for any period of time?<img id="x2" class="rotateImage" src="./resources/assets/xmarkxmark.svg" alt=""></button>
           <div class="panel">
-            <p id="panelPara">Lorem ipsum...</p>
+            <p id="panelPara">Yes you Can book for any period of time</p>
           </div>
         </div>
 
         <div class="accordionBox">
-          <button class="accordion">Can i opt car for a longer period?</button>
+          <button class="accordion">Can i opt car for a longer period?<img id="x3" class="rotateImage" src="./resources/assets/xmarkxmark.svg" alt=""></button>
           <div class="panel">
-            <p id="panelPara">Lorem ipsum...</p>
+            <p id="panelPara">Yes you can opt car for a longer period</p>
           </div>
         </div>
 
         <div class="accordionBox">
-          <button class="accordion">Can i book one-way trip?</button>
+          <button class="accordion">Can i book one-way trip?<img id="x4" class="rotateImage" src="./resources/assets/xmarkxmark.svg" alt=""></button>
           <div class="panel">
-            <p id="panelPara">Lorem ipsum...</p>
+            <p id="panelPara">Yes you can book for one-way trip</p>
           </div>
         </div>
 
         <div class="accordionBox">
           <button class="accordion">
-            Is there home delivery option available?
+            Is there home delivery option available?<img id="x5" class="rotateImage" src="./resources/assets/xmarkxmark.svg" alt="">
           </button>
           <div class="panel">
-            <p id="panelPara">Lorem ipsum...</p>
+            <p id="panelPara">Yes cars can be delivered at your house.</p>
           </div>
         </div>
 
         <div class="accordionBox">
-          <button class="accordion">How can i make the payment?</button>
+          <button class="accordion">How can i make the payment?<img id="x6" class="rotateImage" src="./resources/assets/xmarkxmark.svg" alt=""></button>
           <div class="panel">
-            <p id="panelPara">Lorem ipsum...</p>
+            <p id="panelPara">There are manu options to make payments.</p>
           </div>
         </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer>
-      <div id="footerDiv1">
-        <img src="./resources/assets/Group 1261156477alhabtoor.svg" alt="" />
+      <!-- footer mobile view -->
+      <div id="footerMobile">
+        <div id="MediaLinks">
+          <img src="./resources/assets/Group 1261156489alhabtoor.svg" alt="">
+          <ul>
+          <li><img src="./resources/assets/Social Iconsfacebook.svg" alt=""></li>
+          <li><img src="./resources/assets/Social Iconsxtwitter.svg" alt=""></li>
+          <li><img src="./resources/assets/Social Iconsinsta.svg" alt=""></li>
+          <li><img src="./resources/assets/Social Iconslinkedin.svg" alt=""></li>
+          <li><img src="./resources/assets/Social Iconsyoutube.svg" alt=""></li></ul>
+        </div>
+        <div id="bottomNavigation">
+          <ul id="navul">
+            <li>Home</li>
+            <li>Offers</li>
+            <li>Career</li>
+            <li>About Us</li>
+            <li id="end">Locations</li>
+          </ul>
+          <ul id="navul">
+            <li>FAQ</li>
+            <li>Terms & Conditions</li>
+            <li id="end">Service Request</li></ul>
+          <ul id="navul">
+            <li>Privacy Policy</li>
+            <li>Services</li>
+            <li id="end">Contact Us</li></ul>
+        </div>
+        <div id="groupNavigation">
+          <h3>Al Habtoor Companies</h3>
+          <ul id="companyUl1">
+            <li>Hospitality</li>
+            <li id="middle">Real Estate</li>
+            <li>Publishing</li>
+          </ul>
+
+          <ul id="companyUl2">
+            <li id="first">Automotive</li>
+            <li>Vehicle Leasing</li>
+          </ul>
+          <div id="secureDiv">
+            <img id="secureImg" src="./resources/assets/Group 1261156497secure.svg" alt="">
+          </div>
+          
+        </div>
+        <div id="copyright"><p>© 2023 Car rental LLC - All Rights Reserved. </p></div>
       </div>
-      <hr />
-      <p id="copyright">© 2018 Car rental LLC - All Rights Reserved.</p>
+
+      <!-- Footer Desktop View -->
+      <div id="desktop">
+        <div id="row">
+          <div id="col1">
+            <img id="companylogoFooter" src="./resources/assets/companyLogo-removebg-preview.png" alt="">
+          </div>
+          <div id="col2"> <div id="bottomNavDesktop">
+            <ul id="bottomNavList"><li>Home</li>
+            <li>About Us</li>
+            <li>Services</li></ul>
+            <ul id="bottomNavList"><li>Offer</li>
+            <li>Location</li>
+            <li>Contact Us</li></ul>
+            <ul id="bottomNavList"><li>FAQ</li>
+            <li>Privacy Policy</li>
+            <li>Service Request</li></ul>
+            <ul id="bottomNavList"><li>Career</li>
+            <li>Terms & Conditions</li></ul>
+          </div>
+          <div id="groupNavigationDesktop">
+            <h3>Al Habtoor Companies</h3>
+            <ul id="companyUl1Desk">
+              <li>Hospitality</li>
+              <li>Real Estate</li>
+              <li>Publishing</li>
+              <li>Automotive</li>
+              <li>Vehicle Leasing</li>
+            </ul>
+          </div></div>
+          <div id="col3">
+            <p>Follow us on</p>
+            <ul><li><img src="./resources/assets/Social IconsfacebookLight.svg" alt=""></li>
+            <li><img src="./resources/assets/Social IconsxtwitterLight.svg" alt=""></li>
+            <li><img src="./resources/assets/Social IconsinstagramLight.svg" alt=""></li>
+            <li><img src="./resources/assets/Social IconslinkedInLight.svg" alt=""></li>
+            <li><img src="./resources/assets/Social IconsyoutubeLight.svg" alt=""></li></ul>
+            <div id="siteSecurityImages">
+              <img src="./resources/assets/image 270siteLock.svg" alt="">
+              <img src="./resources/assets/image 273globalSign.svg" alt="">
+            </div>
+          </div>
+        </div>
+       
+        <div id="copyright">
+          <p>© 2023 Car rental LLC - All Rights Reserved. </p>
+        </div>
+      </div>
     </footer>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const burger = document.querySelector(".burger");
-        const sidebar = document.querySelector(".side-bar");
-        const close = document.getElementById("closeButtonIcon");
-        const BookACar = document.getElementById("BookACar");
-
-        const bookTabs =  document.getElementById("bookTabs");
-
-        burger.addEventListener("click", () => {
-          console.log("clicked");
-          sidebar.classList.add("active");
-        });
-
-        close.addEventListener("click", () => {
-          console.log("clicked");
-          sidebar.classList.remove("active");
-        });
-
-        BookACar.addEventListener("click", () => {
-          console.log("clicked");
-          bookTabs.classList.toggle("active");
-        });
-
-        
-
-      });
-    </script>
+    
     <script src="./resources/script.js"></script>
+    <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
   </body>
 </html>
