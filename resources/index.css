@@ -527,12 +527,11 @@ nav {
 #subscribe {
     display: flex;
     flex-wrap: wrap;
-
     margin-top: 40px;
 }
 
 #subscribeDiv1 {
-    width: 685px;
+    width: 610px;
     margin-bottom: 40px;
     padding-left: 64px;
 }
@@ -585,7 +584,7 @@ nav {
     background-color: #E21E26;
     display: flex;
     padding: 48px 72px;
-    width: 685px;
+    width: 610px;
     margin-bottom: 40px;
 }
 
